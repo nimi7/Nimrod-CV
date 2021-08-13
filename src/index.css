@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Header{
+	background: linear-gradient(-45deg, #5283ee, #8c3ce7, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+   
+	text-align: center;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	
+
+	word-spacing: 10px;
+	letter-spacing: 3px;
+    line-height: 29px;
+	
+	text-shadow: #A3A3A3 -5px -8px 13px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.facebook {
+    color: rgb(39, 40, 128);
+ }

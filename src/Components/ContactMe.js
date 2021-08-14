@@ -33,8 +33,8 @@ export default function Contact() {
             <div class="min-w-screen min-h-screen bg-blue-900 flex items-center justify-center px-5 py-5">
                 <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
                     <div class=" md:flex w-full">
-                
-                        <div class="mr-24 w-full md:w-1/2 py-10 px-5 md:px-10">
+
+                        <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
                             <div className='ml-12 mx:ml-1'>
 
                                 <div class=" flex mb-12 items-center justify-center bg-gray-100">
@@ -198,8 +198,11 @@ export default function Contact() {
                             </div>
 
                         </div>
-                        <div className=' flex justify-center mt-16 mb-16 h-full'>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" style={{ border: "0" }} allowfullscreen="" loading="lazy" height='400' width='400'></iframe>
+                        <div className='flex justify-center items-stretch mt-16 mb-16 h-full ml-24 '>
+                            <div className='py-15'>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" allowfullscreen="" loading="lazy" height='400' width='400'></iframe>
+                            </div>
+
                         </div>
 
 

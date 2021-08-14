@@ -123,18 +123,17 @@ export default function Contact() {
                                 <h1 class="font-bold text-3xl text-gray-900">Contact Me</h1>
 
                             </div>
-                            <div class="">
-                                <form class="bg-blue text-center w-2/2 px-3 text-gray-800 rounded" onSubmit={sendEmail}>
-                                    <div className='flex'>
+                            <div class=" flex justify-center">
+                                <form class="flex flex-col bg-blue text-center w-2/2 px-3 text-gray-800 rounded" onSubmit={sendEmail}>
+                                    <div className='md:flex'>
 
-
-                                        <div class="w-1/2  mb-5">
+                                        <div class="w-1/2  mb-5 flex flex-col ">
                                             <label for="" class="text-xs font-semibold">Full Name</label>
                                             <div class="flex ">
                                                 <div
-                                                    class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                                                    class="w-10 z-10 pl-1  text-center pointer-events-none flex items-center justify-center">
                                                     <i class="mdi mdi-account-outline  text-lg"></i></div>
-                                                <input type="text" name='from_name' class="w-18 -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Name Here" />
+                                                <input type="text" name='from_name' class="w-18  -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Name Here" />
 
 
 
@@ -143,9 +142,9 @@ export default function Contact() {
 
                                         </div>
 
-                                        <div class="w-1/2  mb-5">
+                                        <div class="flex flex-col w-1/2  mb-5 x">
                                             <label for="" class="text-xs font-semibold">Company</label>
-                                            <div class="flex ">
+                                            <div class="flex">
                                                 <div
                                                     class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                                     <i class="mdi mdi-account-outline  text-lg"></i></div>
@@ -159,7 +158,7 @@ export default function Contact() {
                                         </div>
 
                                     </div>
-                                    <div className='flex  '>
+                                    <div className='flex flex flex-col justify-center '>
                                         <div class="w-1/2  mb-5">
                                             <label for="" class="text-xs font-semibold ">your Email</label>
                                             <div className='flex'>
@@ -167,7 +166,7 @@ export default function Contact() {
                                                     <div
                                                         class="w-10 z-10  pl-0 text-center pointer-events-none flex items-center justify-center">
                                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                                    <input type="text" name='message' class="w-34 -ml-10 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
+                                                    <input type="text" name='message' class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
                                                     <input type="hidden" name='rating' value={Rating} />
 
                                                 </div>
@@ -198,9 +197,9 @@ export default function Contact() {
                             </div>
 
                         </div>
-                        <div className='flex justify-center items-stretch mt-16 mb-16 h-full ml-24 '>
-                            <div className='py-15'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" allowfullscreen="" loading="lazy" height='400' width='400'></iframe>
+                        <div className='flex justify-end w-full mt-16 mb-16 h-full  '>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" allowfullscreen="" loading="lazy" height='500' width='500'></iframe>
                             </div>
 
                         </div>

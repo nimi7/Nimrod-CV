@@ -37,8 +37,8 @@ export default function Projects() {
 
                     <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
                         <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
-                            <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
-                            <h3 class="hidden md:block font-bold text-2xl text-gray-700">HOTEL AMANEE</h3>
+                            <h4 class="hidden md:block text-xl text-gray-400">{props.WebSite}</h4>
+                            <h3 class="hidden md:block font-bold text-2xl text-gray-700">{props.Name}</h3>
                             <p class="text-gray-600 text-justify">{props.Words}</p>
                             <a class="flex items-baseline mt-3 text-blue-600 hover:text-blue-900 focus:text-blue-900" href={props.WebSite}>
                                 <span>Go to WebSite</span>

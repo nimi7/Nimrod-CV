@@ -14,7 +14,7 @@ const projectJSon = [
     {
         Name: "Burger-Shop",
         Words: "A personal project in ordering burgers of all kinds according to the restaurant menu.",
-        WebSite: "https://burgers-shop.netlify.app/",
+        WebSite: "https://my-burgers-shop.netlify.app/",
         Pic: Burger
     },
     {

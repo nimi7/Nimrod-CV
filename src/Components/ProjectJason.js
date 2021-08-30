@@ -8,7 +8,7 @@ const projectJSon = [
     {
         Name: "Tilok",
         Words: "Final project in collaboration with AT&T company, which included roles such as: Scram Master, Front-end, Back-end.",
-        WebSite: "https://tilok.netlify.app/",
+        WebSite: "https://my-tilok.netlify.app/",
         Pic: Tilok
     },
     {

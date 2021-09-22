@@ -2,7 +2,7 @@ import React from 'react';
 import Burger from '../Pics/Burger-Web.png'
 import Tilok from '../Pics/Tilok-Web.png'
 import Westa from '../Pics/westa-tzaga.png'
-
+import Movies from '../Pics/my-movies.png'
 
 const projectJSon = [
     {
@@ -22,6 +22,12 @@ const projectJSon = [
         Words: "Acton project with the participation of WIX, which represented an independent business of traditional psychotherapy.",
         WebSite: "https://westa-tzaga.netlify.app/",
         Pic: Westa
+    },
+    {
+        Name: "My-Movies",
+        Words: "A movie website basted on Api movies Database just for fun...",
+        WebSite: "https://m-movies.netlify.app/",
+        Pic: Movies
     }
 ]
 

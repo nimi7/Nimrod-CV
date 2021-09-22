@@ -14,7 +14,7 @@ export default function Skills() {
     const Skilling = [java, Sharp, HTML5, mongodb, node, REACT];
     console.log(Skilling)
     return (
-        <div id='Skills'>
+        <div id='Skills' >
             <h1 className='Project'>Skills</h1>
             <div className='mr-24 ml-24'>
                 <div class="grid grid-cols-1 gap-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 xs:grid justify-items-center  ">

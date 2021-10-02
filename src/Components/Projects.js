@@ -13,7 +13,7 @@ export default function Projects() {
     console.log('ProjectJasn', ProjectJasn)
     return (
         <div id='Projects' className='project'>
-            <div class="container mx-auto my-5">
+            <div class="container mx-auto ">
                 <h1 className='Project'>My Project</h1>
 
 
@@ -23,7 +23,7 @@ export default function Projects() {
 
 
             {ProjectJasn.map((props) => {
-                return <div class="my-9  transform hover:scale-110 duration-500 relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+                return <div class="my-4  transform hover:scale-110 duration-500 relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
                   
                         <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
                             <div class="absolute inset-0 w-full h-full object-fill object-center bg-blue-400 bg-opacity-30 bg-cover bg-bottom background-blend-mode: multiply" style={{ backgroundImage: `url(${props.Pic})` }} ></div>

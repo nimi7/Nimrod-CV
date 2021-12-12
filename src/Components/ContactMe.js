@@ -5,8 +5,8 @@ import ReactStars from "react-rating-stars-component";
 import MyAvatar from '../Pics/my-avatar.png'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll'
-import { propTypes } from 'react-bootstrap/esm/Image';
-
+import { Modal, Button } from 'react-bootstrap';
+import SubscribePic from '../Pics/SubscribeAvatar.png'
 
 export default function Contact() {
     const [Name, SetName] = useState('');
@@ -14,6 +14,8 @@ export default function Contact() {
     const [Email, SetEmail] = useState('');
     const [Rating, SetRating] = useState();
     const [Error, SetError] = useState('');
+
+    const [smShow, setSmShow] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -24,6 +26,7 @@ export default function Contact() {
             }, 2000)
 
         } else {
+            setSmShow(true)
             emailjs.sendForm('service_v6y1trb', 'template_3k621we', e.target, 'user_ernECXdbsypLMtuaoKOEr')
                 .then((result) => {
                     console.log(result.text);
@@ -34,14 +37,35 @@ export default function Contact() {
         }
 
         e.target.reset();
+        SetName('')
+        SetCompany('')
+        SetEmail('')
         SetRating(0);
     }
     const ratingChanged = (newRating) => {
         console.log(newRating);
         SetRating(newRating);
     };
+
+
     return (
         <div id='ContactMe'>
+
+
+            <Modal
+                size="sm"
+                show={smShow}
+                onHide={() => setSmShow(false)}
+                aria-labelledby="example-modal-sizes-title-sm"
+            >
+
+                <Modal.Body className='bg-blue-100'>
+                    <img src={SubscribePic} />
+                    <div className='text-center text-xl'>
+                        Thank U for <br /> <span className='bg-blue-300 rounded-lg text-4xl'>Subscribe</span>
+                    </div>
+                </Modal.Body>
+            </Modal>
 
             <div class="min-w-screen min-h-screen bg-blue-900 flex items-center justify-center px-5 py-5">
                 <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
@@ -179,7 +203,7 @@ export default function Contact() {
                                                     <div
                                                         class="w-10 z-10  pl-0 text-center pointer-events-none flex items-center justify-center">
                                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                                    <input type="text" name='message' value={Email} onChange={(e) => SetName(e.target.value)} class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
+                                                    <input type="text" name='message' value={Email} onChange={(e) => SetEmail(e.target.value)} class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
                                                     <input type="hidden" name='rating' value={Rating} />
 
                                                 </div>
@@ -227,6 +251,7 @@ export default function Contact() {
             </div>
 
 
+
             <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
 
                 <div><Link to='header' spy={true} smooth={true}>
@@ -237,6 +262,8 @@ export default function Contact() {
 
                 </div>
             </div>
+
+
         </div>
     )
 }

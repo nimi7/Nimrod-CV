@@ -9,17 +9,30 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 
 
 export default function Contact() {
+    const [Name, SetName] = useState('');
+    const [Company, SetCompany] = useState('');
+    const [Email, SetEmail] = useState('');
     const [Rating, SetRating] = useState();
+    const [Error, SetError] = useState('');
 
     function sendEmail(e) {
         e.preventDefault();
+        if (Name.length < 1 || Company.length < 1 || Email.length < 1) {
+            SetError('Please Enter Full Information')
+            setTimeout(() => {
+                SetError('')
+            }, 2000)
 
-        emailjs.sendForm('service_v6y1trb', 'template_3k621we', e.target, 'user_ernECXdbsypLMtuaoKOEr')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        } else {
+            emailjs.sendForm('service_v6y1trb', 'template_3k621we', e.target, 'user_ernECXdbsypLMtuaoKOEr')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+
+        }
+
         e.target.reset();
         SetRating(0);
     }
@@ -133,7 +146,7 @@ export default function Contact() {
                                                 <div
                                                     class="w-10 z-10 pl-1  text-center pointer-events-none flex items-center justify-center">
                                                     <i class="mdi mdi-account-outline  text-lg"></i></div>
-                                                <input type="text" name='from_name' class="w-18  -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Name Here" />
+                                                <input type="text" minLength='2' name='from_name' value={Name} onChange={(e) => SetName(e.target.value)} class="w-18  -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Name Here" />
 
 
 
@@ -148,7 +161,7 @@ export default function Contact() {
                                                 <div
                                                     class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                                     <i class="mdi mdi-account-outline  text-lg"></i></div>
-                                                <input type="text" name='to_name' class="w-18 -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Company" />
+                                                <input type="text" name='to_name' value={Company} onChange={(e) => SetCompany(e.target.value)} class="w-18 -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Company" />
 
 
 
@@ -166,7 +179,7 @@ export default function Contact() {
                                                     <div
                                                         class="w-10 z-10  pl-0 text-center pointer-events-none flex items-center justify-center">
                                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                                    <input type="text" name='message' class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
+                                                    <input type="text" name='message' value={Email} onChange={(e) => SetName(e.target.value)} class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
                                                     <input type="hidden" name='rating' value={Rating} />
 
                                                 </div>
@@ -184,9 +197,10 @@ export default function Contact() {
 
 
                                         </div>
-
+                                        <div className='float-left'>
+                                            {Error}
+                                        </div>
                                     </div>
-
 
 
 

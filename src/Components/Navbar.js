@@ -35,9 +35,9 @@ export default function Navbar() {
                                 <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                     I enjoy working on branding, product design, and strategy with passionate people. , whether it's a website or an interface.
                                 </p>
-                                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center ">
                                     <div class="rounded-md shadow">
-                                        <a href="https://github.com/nimi7" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                                        <a href="https://github.com/nimi7" class="w-full mt-3 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                                             Github
 
                                         </a>

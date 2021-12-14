@@ -3,8 +3,15 @@ import Burger from '../Pics/Burger-Web.png'
 import Tilok from '../Pics/Tilok-Web.png'
 import Westa from '../Pics/westa-tzaga.png'
 import Movies from '../Pics/my-movies.png'
+import SocialMadia from '../Pics/nimi-socialMedia.png'
 
 const projectJSon = [
+    {
+        Name: "My Mini Social-Madia",
+        Words: "A personal project by Using tailwind-css ,Mongo , React , With Login/Logout and create Users authenticate (Still in progress) ",
+        WebSite: "https://tailwind-css.herokuapp.com/",
+        Pic: SocialMadia
+    },
     {
         Name: "Tilok",
         Words: "Final project in collaboration with AT&T company, which included roles such as: Scram Master, Front-end, Back-end.",
@@ -29,6 +36,7 @@ const projectJSon = [
         WebSite: "https://m-movies.netlify.app/",
         Pic: Movies
     }
+   
 ]
 
 

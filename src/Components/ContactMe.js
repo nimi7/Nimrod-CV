@@ -67,12 +67,12 @@ export default function Contact() {
                 </Modal.Body>
             </Modal>
 
-            <div class="min-w-screen min-h-screen bg-blue-900 flex items-center justify-center px-5 py-5">
+            <div class="min-w-screen min-h-screen bg-blue-900 flex items-center justify-center px-2 py-2">
                 <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
-                    <div class=" md:flex w-full">
+                    <div class=" md:flex w-full items-center justify-center ">
 
                         <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
-                            <div className='ml-12 mx:ml-1'>
+                            <div className='mx:ml-0'>
 
                                 <div class=" flex mb-12 items-center justify-center bg-gray-100">
                                     <div class="flex flex-col items-center w-full w-auto p-4 bg-white rounded-3xl md:flex-row">
@@ -87,8 +87,8 @@ export default function Contact() {
                                             <div class="flex flex-col items-center md:items-start">
                                                 <h2 class="text-xl font-medium">Nimrod Wandam</h2>
                                                 <p class="text-base font-medium text-gray-400">Full Stack Developer</p>
-                                                <p class="text-base font-medium text-gray-500">Email : Nimrod.w7@gmail.com</p>
-                                                <p class="text-base font-medium text-gray-500">Phone : 053-720-5885</p>
+                                                <p class="text-base font-medium text-gray-500 xs:text-sm">Email : Nimrod.w7@gmail.com</p>
+                                                <p class="text-base font-medium text-gray-500 xs:text-sm">Phone : 053-720-5885</p>
 
 
                                             </div>
@@ -161,7 +161,7 @@ export default function Contact() {
 
                             </div>
                             <div class=" flex justify-center">
-                                <form class="flex flex-col bg-blue text-center w-2/2 px-3 text-gray-800 rounded" onSubmit={sendEmail}>
+                                <form class="flex flex-col bg-blue text-center float-left w-2/2 px-3 text-gray-800 rounded" onSubmit={sendEmail}>
                                     <div className='md:flex'>
 
                                         <div class="w-1/2  mb-5 flex flex-col ">
@@ -185,6 +185,7 @@ export default function Contact() {
                                                 <div
                                                     class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                                     <i class="mdi mdi-account-outline  text-lg"></i></div>
+                                                  
                                                 <input type="text" name='to_name' value={Company} onChange={(e) => SetCompany(e.target.value)} class="w-18 -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Company" />
 
 
@@ -203,7 +204,7 @@ export default function Contact() {
                                                     <div
                                                         class="w-10 z-10  pl-0 text-center pointer-events-none flex items-center justify-center">
                                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                                    <input type="text" name='message' value={Email} onChange={(e) => SetEmail(e.target.value)} class="w-34 -ml-12 pl-10 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
+                                                    <input type="text" name='message' value={Email} onChange={(e) => SetEmail(e.target.value)} class="w-38 -ml-14 pl-12 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
                                                     <input type="hidden" name='rating' value={Rating} />
 
                                                 </div>
@@ -235,7 +236,7 @@ export default function Contact() {
                             </div>
 
                         </div>
-                        <div className='flex justify-end w-full mt-16 mb-16 h-full  '>
+                        <div className='flex justify-center w-full  mx-2 h-full  '>
                             <div>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" allowfullscreen="" loading="lazy" height='500' width='500'></iframe>
                             </div>

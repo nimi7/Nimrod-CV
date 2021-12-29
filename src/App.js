@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar'
@@ -6,15 +7,36 @@ import Skills from './Components/Skills';
 import Header from './Components/Header'
 import Contact from './Components/ContactMe';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Aos from 'aos'
+import "aos/dist/aos.css"
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, [])
   return (
     <div >
-      <Header/>
-      <Navbar/>
-      <Project/>
-      <Skills/>
-      <Contact/>
+      <div data-aos='fade-right'>
+        <Header id='Header' />
+      </div>
+
+
+
+      <div data-aos='fade-right'>
+        <Navbar id='Navbar' />
+      </div>
+
+
+      <div data-aos='fade-right'>
+        <Project id='Project' />
+      </div>
+      <div data-aos='fade-right'>
+        <Skills id='Skills' />
+      </div>
+      <div data-aos='fade-right'>
+        <Contact id='Contact' />
+      </div>
+
+
 
     </div>
   );

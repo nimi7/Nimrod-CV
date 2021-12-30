@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import emailjs from 'emailjs-com';
 import Starsrating from './StarRating';
 import ReactStars from "react-rating-stars-component";
@@ -9,6 +9,7 @@ import { Modal, Button } from 'react-bootstrap';
 import SubscribePic from '../Pics/SubscribeAvatar.png'
 
 export default function Contact() {
+  
     const [Name, SetName] = useState('');
     const [Company, SetCompany] = useState('');
     const [Email, SetEmail] = useState('');
@@ -157,7 +158,7 @@ export default function Contact() {
 
                             </div>
                             <div class="text-center mb-10">
-                                <h1 class="font-bold text-3xl text-gray-900">Contact Me</h1>
+                                <h1 style={{fontFamily:"Papyrus"}} class="font-bold text-3xl text-gray-900 animate__animated animate__jackInTheBox">Contact Me</h1>
 
                             </div>
                             <div class=" flex justify-center">
@@ -230,7 +231,7 @@ export default function Contact() {
 
 
 
-                                    <button type='submit' class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">Subscribe</button>
+                                    <button style={{fontFamily:"Papyrus"}} type='submit' class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">Subscribe</button>
 
                                 </form>
                             </div>

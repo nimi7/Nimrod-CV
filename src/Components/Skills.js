@@ -22,7 +22,7 @@ export default function Skills() {
                         return <div className=''>
 
                             <div class="mb-24 xs:text-center ">
-                                <img src={props} className='w-48 h-40'  />
+                                <img src={props} className=' w-48 h-40'  />
                             </div>
                         </div>
 

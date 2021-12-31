@@ -9,7 +9,7 @@ import Aos from 'aos'
 
 export default function Header() {
     useEffect(() => {
-        Aos.init({ duration: 2000, throttleDelay: 99 })
+        Aos.init({ duration: 4000, throttleDelay: 99 })
     }, [])
 
     return (
@@ -41,7 +41,7 @@ export default function Header() {
                                         <a href="#" class="font-medium text-indigo-300 hover:text-indigo-500 "> <Link to='ContactMe' spy={true} smooth={true}> Contact-Me</Link></a>
                                     </div>
                                 </div>
-                                <h1 style={{fontFamily:"Papyrus"}} class="text-7xl text-white italic hover:scale-125   ">
+                                <h1 style={{fontFamily:"Papyrus"}} class="animate__animated animate__zoomInLeft animate__delay-1s text-7xl text-white italic hover:scale-125   ">
 
                                     -  Nimrod Wandam -   <span class="text-blue-400 underline "></span></h1>
                                 <div>

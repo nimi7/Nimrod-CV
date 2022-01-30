@@ -4,6 +4,7 @@ import Tilok from '../Pics/Tilok-Web.png'
 import Westa from '../Pics/westa-tzaga.png'
 import Movies from '../Pics/my-movies.png'
 import SocialMadia from '../Pics/nimi-socialMedia.png'
+import MemoryGame from '../Pics/Memory-Game.png'
 
 const projectJSon = [
     {
@@ -35,6 +36,12 @@ const projectJSon = [
         Words: "A movie website basted on Api movies Database just for fun...",
         WebSite: "https://m-movies.netlify.app/",
         Pic: Movies
+    },
+    {
+        Name: "Memory-Game",
+        Words: "Really Cool Memory Game Hope U have fun ^_^",
+        WebSite: "https://my-memory-game1.netlify.app/",
+        Pic: MemoryGame
     }
    
 ]

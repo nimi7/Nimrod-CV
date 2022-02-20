@@ -1,0 +1,24 @@
+
+/* .skiilsshow{
+    width: 100px;
+    height: 100px;
+    background: red;
+    
+    transition-duration: 2s;
+} */
+/* .skiilsshow:hover{
+    width: 300px;
+} */
+
+@keyframes example {
+    from {width: 0px;}
+    to {width: 100%;}
+  }
+
+  .skiilsshow {
+    width: 100%;
+    height: 20px;
+    
+    animation-name: example;
+    animation-duration: 4s;
+  }

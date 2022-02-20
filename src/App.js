@@ -29,7 +29,7 @@ function App() {
       <div data-aos='fade-right'>
         <Project id='Project' />
       </div>
-      <div data-aos='fade-right'>
+      <div>
         <Skills id='Skills' />
       </div>
       <div data-aos='fade-right'>

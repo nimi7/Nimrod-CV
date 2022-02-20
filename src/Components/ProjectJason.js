@@ -19,12 +19,7 @@ const projectJSon = [
         WebSite: "https://my-tilok.netlify.app/",
         Pic: Tilok
     },
-    {
-        Name: "Burger-Shop",
-        Words: "A personal project in ordering burgers of all kinds according to the restaurant menu.",
-        WebSite: "https://my-burgers-shop.netlify.app/",
-        Pic: Burger
-    },
+ 
     {
         Name: "Westa-Tzaga",
         Words: "Acton project with the participation of WIX, which represented an independent business of traditional psychotherapy.",

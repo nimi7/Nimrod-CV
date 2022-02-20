@@ -1,21 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineFacebook, AiOutlineLinkedin } from 'react-icons/ai';
 import { FaInstagram } from 'react-icons/fa'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import Aos from 'aos'
-
+import CountUp from 'react-countup';
 
 export default function Header() {
     useEffect(() => {
         Aos.init({ duration: 4000, throttleDelay: 99 })
     }, [])
-
+    const [color, SEtcolor] = useState()
     return (
         <div>
-
-
+            <div ></div>
             <div id='header' className='Header'>
 
 
@@ -41,11 +40,11 @@ export default function Header() {
                                         <a href="#" class="font-medium text-indigo-300 hover:text-indigo-500 "> <Link to='ContactMe' spy={true} smooth={true}> Contact-Me</Link></a>
                                     </div>
                                 </div>
-                                <h1 style={{fontFamily:"Papyrus"}} class="animate__animated animate__zoomInLeft animate__delay-1s text-7xl text-white italic hover:scale-125   ">
+                                <h1 style={{ fontFamily: "Papyrus" }} class="animate__animated animate__zoomInLeft animate__delay-1s text-7xl text-white italic hover:scale-125   ">
 
                                     -  Nimrod Wandam -   <span class="text-blue-400 underline "></span></h1>
                                 <div>
-                                    <h5 style={{fontFamily:"Papyrus"}} className='text-indigo-100  text-center'>you can do anything you set your <strong className='text-blue-400'>MIND</strong> to...</h5>
+                                    <h5 style={{ fontFamily: "Papyrus" }} className='text-indigo-100  text-center'>you can do anything you set your <strong className='text-blue-400'>MIND</strong> to...</h5>
                                     <h6 className='text-indigo-300  text-center'><a href='https://en.wikipedia.org/wiki/Benjamin_Franklin'>-"Benjamin Franklin"-</a></h6>
                                 </div>
                                 <div className='grid grid-cols-3 flex items-center ml-12 ml-12 w-auto   '>

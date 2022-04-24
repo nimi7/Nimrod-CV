@@ -203,7 +203,7 @@ export default function Contact() {
                                             <div className='flex'>
                                                 <div class="flex">
                                                     <div
-                                                        class="w-10 z-10  pl-0 text-center pointer-events-none flex items-center justify-center">
+                                                        class="w-10 z-10 md:ml-4 pl-0 text-center pointer-events-none flex items-center justify-center">
                                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
                                                     <input type="text" name='message' value={Email} onChange={(e) => SetEmail(e.target.value)} class="w-38 -ml-14 pl-12 pr-1 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="yourEmail@gmail.com" />
                                                     <input type="hidden" name='rating' value={Rating} />
@@ -237,13 +237,7 @@ export default function Contact() {
                             </div>
 
                         </div>
-                        <div className='flex justify-center w-full  mx-2 h-full  '>
-                            <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13591.560814457405!2d34.77631276935836!3d31.609468201441626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029164135ac683%3A0xa028fbe6cf58f371!2z15TXpNeo15fXmdedLCDXp9eo15nXqiDXkteq!5e0!3m2!1siw!2sil!4v1628625441878!5m2!1siw!2sil" allowfullscreen="" loading="lazy" height='500' width='500'></iframe>
-                            </div>
-
-                        </div>
-
+                    
 
 
                     </div>

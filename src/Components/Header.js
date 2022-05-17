@@ -22,7 +22,7 @@ export default function Header() {
                 <header>
 
 
-                    <h1>After Update</h1>
+                
                     <div class="w-full mr-14 bg-center bg-cover h-screen" style={{ backgroundImage: "url()" }}>
 
                         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">

@@ -22,7 +22,7 @@ export default function Header() {
                 <header>
 
 
-
+                    <h1>After Update</h1>
                     <div class="w-full mr-14 bg-center bg-cover h-screen" style={{ backgroundImage: "url()" }}>
 
                         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
@@ -30,7 +30,7 @@ export default function Header() {
 
                             <div class="text-center ">
                                 <div className='flex w-auto text-1xl font-semibold text-white'>
-                                    <div  class="-mt-36 md:block md:ml-10 md:pr-4 md:space-x-4">
+                                    <div class="-mt-36 md:block md:ml-10 md:pr-4 md:space-x-4">
                                         <a href="#" class=" no-underline font-medium text-gray-200 hover:text-gray-900"> <Link to='About' spy={true} smooth={true}> About </Link></a>
 
                                         <a href="#" class="no-underline font-medium text-gray-200 hover:text-gray-900"> <Link to='Projects' spy={true} smooth={true}> Projects </Link></a>

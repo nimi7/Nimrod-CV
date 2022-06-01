@@ -14,7 +14,7 @@ export default function Header() {
     const [color, SEtcolor] = useState()
     return (
         <div>
-            <div ></div>
+
             <div id='header' className='Header'>
 
 
@@ -22,7 +22,7 @@ export default function Header() {
                 <header>
 
 
-                
+
                     <div class="w-full mr-14 bg-center bg-cover h-screen" style={{ backgroundImage: "url()" }}>
 
                         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">

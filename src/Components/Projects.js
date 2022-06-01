@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom'
 
 
 export default function Projects() {
-   
+
     console.log('ProjectJasn', ProjectJasn)
 
 
 
- 
+
     return (
         <div id='Projects' className='project'>
             <div class="container mx-auto ">
@@ -26,8 +26,29 @@ export default function Projects() {
 
             </div>
 
+            <div className='Craddd'>
 
-            {ProjectJasn.map((props) => {
+
+                {ProjectJasn.map((project) => {
+                    return <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img className='image_Project' src={project.Pic} alt="Avatar" />
+
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>{project.Name}</h3>
+                                <p>{project.Words}</p>
+                                <p>Link:<a href={project.WebSite}>{project.WebSite}</a></p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                })}
+
+
+            </div>
+            {/* {ProjectJasn.map((props) => {
                 return <div class="my-4  transform hover:scale-110 duration-500 relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
 
                     <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
@@ -55,11 +76,11 @@ export default function Projects() {
 
                 </div>
 
-            })}
+            })} */}
 
 
 
-        </div>
+        </div >
 
     )
 }

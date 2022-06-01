@@ -5,10 +5,10 @@ import Westa from '../Pics/westa-tzaga.png'
 import Movies from '../Pics/my-movies.png'
 import SocialMadia from '../Pics/nimi-socialMedia.png'
 import MemoryGame from '../Pics/Memory-Game.png'
-
+import ChatApp from '../Pics/Chat_App.png'
 const projectJSon = [
     {
-        Name: "My Mini Social-Madia",
+        Name: "Social-Madia",
         Words: "A personal project by Using tailwind-css ,Mongo , React , With Login/Logout and create Users authenticate (Still in progress) ",
         WebSite: "https://tailwind-css.herokuapp.com/",
         Pic: SocialMadia
@@ -37,9 +37,15 @@ const projectJSon = [
         Words: "Really Cool Memory Game Hope U have fun ^_^",
         WebSite: "https://my-memory-game1.netlify.app/",
         Pic: MemoryGame
+    },
+    {
+        Name: "Room Chat App",
+        Words: "Create your own Room To Creat A Conversation With Friends ",
+        WebSite: "https://room-chat-app1.netlify.app/",
+        Pic: ChatApp
     }
    
 ]
-
+//https://room-chat-app1.netlify.app/
 
 export default projectJSon;

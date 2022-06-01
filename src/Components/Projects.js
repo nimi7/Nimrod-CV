@@ -37,7 +37,7 @@ export default function Projects() {
 
                             </div>
                             <div class="flip-card-back">
-                                <h3>{project.Name}</h3>
+                                <div className='underline underline-offset-1 text-2xl'>{project.Name}</div>
                                 <p>{project.Words}</p>
                                 <p>Link:<a href={project.WebSite}>{project.WebSite}</a></p>
                             </div>

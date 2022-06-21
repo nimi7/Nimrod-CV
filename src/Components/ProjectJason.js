@@ -10,7 +10,7 @@ const projectJSon = [
     {
         Name: "Social-Madia",
         Words: "A personal project by Using tailwind-css ,Mongo , React , With Login/Logout and create Users authenticate (Still in progress) ",
-        WebSite: "https://tailwind-css.herokuapp.com/",
+        WebSite: "https://social-media7.herokuapp.com/",
         Pic: SocialMadia
     },
     {

@@ -41,7 +41,7 @@ const projectJSon = [
     {
         Name: "Room Chat App",
         Words: "Create your own Room To Creat A Conversation With Friends ",
-        WebSite: "https://room-chat-app1.netlify.app/",
+        WebSite: "https://chat-room-app1.netlify.app/",
         Pic: ChatApp
     }
    

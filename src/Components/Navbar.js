@@ -1,6 +1,6 @@
 import react from 'react'
 import Nimi from '../Pics/Nimi2.png'
-import MyCV from '../Pics/Nimrod-CV.pdf'
+import MyCV from '../Pics/Neriya-CV.docx'
 
 export default function Navbar() {
    

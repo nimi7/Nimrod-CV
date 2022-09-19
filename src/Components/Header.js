@@ -42,7 +42,7 @@ export default function Header() {
                                 </div>
                                 <h1 style={{ fontFamily: "Papyrus" }} class="animate__animated animate__zoomInLeft animate__delay-1s text-7xl text-white italic hover:scale-125   ">
 
-                                    -  Nimrod Wandam -   <span class="text-blue-400 underline "></span></h1>
+                                    -  Neriya Wandam -   <span class="text-blue-400 underline "></span></h1>
                                 <div>
                                     <h5 style={{ fontFamily: "Papyrus" }} className='text-indigo-100  text-center'>you can do anything you set your <strong className='text-blue-400'>MIND</strong> to...</h5>
                                     <h6 className='text-indigo-300  text-center'><a href='https://en.wikipedia.org/wiki/Benjamin_Franklin'>-"Benjamin Franklin"-</a></h6>
@@ -50,7 +50,7 @@ export default function Header() {
                                 <div className='grid grid-cols-3 flex items-center ml-12 ml-12 w-auto   '>
                                     <a href='https://www.facebook.com/tytwp.bsbylk/'><div className='rounded-lg transition-transform transform hover:scale-105'> <span class="iconify rounded-lg" data-icon="uim:facebook-f" style={{ color: 'cornflowerblue' }} data-width="64" data-height="64"></span></div></a>
                                     <a href='https://www.instagram.com/nimi_wandam/'> <div><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="raphael:instagram" color="salmon" width="60" height="60" /></div></a>
-                                    <a href='https://www.linkedin.com/in/nimrod-wandam/'><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="line-md:linkedin" color="cornflowerblue" width="64" height="64" /> </a>
+                                    <a href='https://www.linkedin.com/in/Neriya-wandam/'><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="line-md:linkedin" color="cornflowerblue" width="64" height="64" /> </a>
                                 </div>
 
                             </div>

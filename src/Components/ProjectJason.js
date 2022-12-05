@@ -15,14 +15,14 @@ const projectJSon = [
     },
     {
         Name: "Tilok",
-        Words: "Final project in collaboration with AT&T company, which included roles such as: Scram Master, Front-end, Back-end.",
+        Words: "Final project in collaboration with Wix company, which included roles such as: Scram Master, Front-end, Back-end.",
         WebSite: "https://my-tilok.netlify.app/",
         Pic: Tilok
     },
  
     {
         Name: "Westa-Tzaga",
-        Words: "Acton project with the participation of WIX, which represented an independent business of traditional psychotherapy.",
+        Words: "Acton project with the participation with AT&T, which represented an independent business of traditional psychotherapy.",
         WebSite: "https://westa-tzaga.netlify.app/",
         Pic: Westa
     },

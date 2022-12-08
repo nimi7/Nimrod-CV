@@ -49,7 +49,7 @@ export default function Header() {
                                 </div>
                                 <div className='grid grid-cols-3 flex items-center ml-12 ml-12 w-auto   '>
                                     <a href='https://www.facebook.com/tytwp.bsbylk/'><div className='rounded-lg transition-transform transform hover:scale-105'> <span class="iconify rounded-lg" data-icon="uim:facebook-f" style={{ color: 'cornflowerblue' }} data-width="64" data-height="64"></span></div></a>
-                                    <a href='https://www.instagram.com/nimi_wandam/'> <div><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="raphael:instagram" color="salmon" width="60" height="60" /></div></a>
+                                    <a href='https://www.instagram.com/neriya_wandam/'> <div><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="raphael:instagram" color="salmon" width="60" height="60" /></div></a>
                                     <a href='https://www.linkedin.com/in/Neriya-wandam/'><Icon className=" transition-transform transform hover:scale-125 rounded-lg" icon="line-md:linkedin" color="cornflowerblue" width="64" height="64" /> </a>
                                 </div>
 

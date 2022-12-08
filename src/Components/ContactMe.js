@@ -88,7 +88,7 @@ export default function Contact() {
                                             <div class="flex flex-col items-center md:items-start">
                                                 <h2 class="text-xl font-medium">Neriya Wandam</h2>
                                                 <p class="text-base font-medium text-gray-400">Full Stack Developer</p>
-                                                <p class="text-base font-medium text-gray-500 xs:text-sm">Email : Nimrod.w7@gmail.com</p>
+                                                <p class="text-base font-medium text-gray-500 xs:text-sm">Email : Neriya.w7@gmail.com</p>
                                                 <p class="text-base font-medium text-gray-500 xs:text-sm">Phone : 053-720-5885</p>
 
 

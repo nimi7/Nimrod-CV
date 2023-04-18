@@ -6,6 +6,7 @@ import Movies from '../Pics/my-movies.png'
 import SocialMadia from '../Pics/nimi-socialMedia.png'
 import MemoryGame from '../Pics/Memory-Game.png'
 import ChatApp from '../Pics/Chat_App.png'
+import TicTac from '../Pics/Tic-Tac-toe.png'
 const projectJSon = [
     {
         Name: "Social-Madia",
@@ -43,6 +44,12 @@ const projectJSon = [
         Words: "Create your own Room To Creat A Conversation With Friends ",
         WebSite: "https://chat-room-app1.netlify.app/",
         Pic: ChatApp
+    },
+    {
+        Name: "Tic Tac Toe",
+        Words: "Nice To Play Some Tic Tac Toe for passing your time, Enjoy ^_^",
+        WebSite: "https://mytictactoe7.netlify.app/",
+        Pic: TicTac
     }
    
 ]

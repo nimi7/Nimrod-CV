@@ -1,5 +1,5 @@
 import react from 'react'
-import Nimi from '../Pics/Nimi2.png'
+import Nimi from '../Pics/Nimi7.png'
 import MyCV from '../Pics/Neriya-CV.docx'
 
 export default function Navbar() {
@@ -9,11 +9,11 @@ export default function Navbar() {
         <div id='About' >
            
 
-            <div class="relative bg-white overflow-hidden">
-                <div class="max-w-7xl mx-auto">
-                    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <div class="relative bg-white rounded-full overflow-hidden">
+                <div class="max-w-7xl rounded-full  mx-auto">
+                    <div class="relative z-10   pb-24 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                         <svg class="lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                            <polygon points="50,0 100,0 50,100 0,100" />
+                            <polygon points="22,55 200,100 150,100 10,555" />
                         </svg>
 
                         <div>
